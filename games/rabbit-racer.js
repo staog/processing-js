@@ -113,7 +113,17 @@ for (var i = 0; i < 4; i++) {
 }
 
 //create button
-var btn1;
+var btn1 = new Button({
+        x: 350,
+        y: 350,
+        width: 70,
+        height: 40,
+        color: color(255, 0, 0),
+        label: "Gooo!",
+        onClick: function() {
+          rabbits[3].hop();
+        }
+});
 
 draw = function() {
     background(98, 122, 54);
@@ -143,7 +153,7 @@ draw = function() {
     }
     
     //Draw the button
-
+    btn1.draw();    
     
 };
 
