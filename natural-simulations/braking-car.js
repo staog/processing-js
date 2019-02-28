@@ -40,9 +40,11 @@ draw = function() {
     car.update();
     car.checkEdges();
     car.display(); 
+    // Car accelerates
     if(keyIsPressed && keyCode === RIGHT)
     {
         car.acceleration.set(0.1, 0);
+    // Car slows down
     } else if (keyIsPressed && keyCode === LEFT) {
         car.acceleration.set(-0.1, 0);
     } else {
