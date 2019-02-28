@@ -1,6 +1,7 @@
 fill(5, 5, 5);
 rect(0, 0, 400, 400);
 
+// Function that draws stars on canvas
 var drawStars = function() {
     while (true) {
         var r1 = random(1);
@@ -19,6 +20,7 @@ for (var i = 0; i < 6; i++) {
     ellipse(num*69, num*11, radius, radius);
 }
 
+// Function that draws moon on canvas
 var drawMoon = function() {
     while (true) {
         var r1 = random(1);
@@ -38,6 +40,7 @@ for (var i = 0; i < 1; i++) {
     ellipse(num*69, num*24, radius, radius);
 }
 
+// Function that draws city on canvas
 var drawCity = function() {
     var incAmount = 0.12;
     for (var t = 0; t < incAmount*width; t += incAmount) {
@@ -47,6 +50,7 @@ var drawCity = function() {
     }
 };
 
+// Function that draws land on canvas
 var drawLand = function() {
     var incAmount = 0.01;
     for (var t = 0; t < incAmount*width; t += incAmount) {
