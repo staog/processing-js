@@ -1,4 +1,4 @@
-background(255, 255, 255);
+background(200, 200, 200);
 
 // tomato
 noStroke();
@@ -11,9 +11,7 @@ fill(48, 130, 31);
 rect(176, 103, 12, 32); 
 
 draw = function() {
-    
-    // take a bite out of the tomato!
+// take a bite out of the tomato!
 fill(255, 255, 255);
 ellipse(mouseX, mouseY, 60, 60);
-    
 };
