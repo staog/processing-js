@@ -6,7 +6,8 @@
     <title>Processing.JS inside Webpages: Template</title> 
   </head>
   <body>
-	<!-- This draws the canvas on the webpage -->
+	  
+    <!-- This draws the canvas on the webpage -->
     <canvas id="mycanvas"></canvas> 
   </body>
  
@@ -23,11 +24,14 @@
      
       
       // Your code should be above this line
+	    
     }};
 
   // Get the canvas that ProcessingJS will use
   var canvas = document.getElementById("mycanvas"); 
+	  
   // Pass the function to ProcessingJS constructor
   var processingInstance = new Processing(canvas, programCode); 
-  </script>
+  
+	</script>
 </html>
